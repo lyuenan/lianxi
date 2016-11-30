@@ -1,0 +1,12 @@
+console.log("请输入您的名字");
+process.stdin.on("data",function(data){
+	data=data.toString().trim();
+	if(data=="lyuenan"){
+		console.log("加油!");
+		process.exit();
+	}
+	else{
+		console.log("你好"+data);
+	}
+})
+console.log("下一条语句")
